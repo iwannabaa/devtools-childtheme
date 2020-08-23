@@ -7,6 +7,21 @@
  Version:      1.0.0
 */
 
+/*
+Typography CSS Specification
+font-family: 'Barlow Semi Condensed', sans-serif;
+font-family: 'Quicksand', sans-serif;
+*/
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  background: #F2F0F2;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
 body,
 .entry-title a,
 :root .has-primary-color {
@@ -21,4 +36,19 @@ body,
 .wp-block-button.is-style-outline,
 a {
   color: #EA7317;
+}
+
+body:not(.overlay-header) .primary-menu > li > a,
+body:not(.overlay-header) .primary-menu > li > .icon,
+.modal-menu a,
+.footer-menu a,
+.footer-widgets a,
+#site-footer .wp-block-button.is-style-outline,
+.wp-block-pullquote:before,
+.singular:not(.overlay-header)
+.entry-header a,
+.archive-header a,
+.header-footer-group .color-accent,
+.header-footer-group .color-accent-hover:hover {
+  color: #5AB1BB;
 }
