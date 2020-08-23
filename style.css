@@ -1,0 +1,24 @@
+/*
+ Theme Name:   StudentCircle
+ Description:  StudentCircle Child Theme based on TwentyTwenty
+ Author:       Carlos Jovel
+ Author URI:   http://example.com
+ Template:     twentytwenty
+ Version:      1.0.0
+*/
+
+body,
+.entry-title a,
+:root .has-primary-color {
+  color: #0D4263;
+}
+
+.color-accent,
+.color-accent-hover:hover,
+.color-accent-hover:focus,
+:root .has-accent-color,
+.has-drop-cap:not(:focus):first-letter,
+.wp-block-button.is-style-outline,
+a {
+  color: #EA7317;
+}
