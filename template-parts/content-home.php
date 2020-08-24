@@ -19,7 +19,7 @@
 	get_template_part( 'template-parts/entry-header-home' );
 
 	if ( ! is_search() ) {
-		get_template_part( 'template-parts/featured-image' );
+		get_template_part( 'template-parts/featured-image-home' );
 	}
 
 	?>
