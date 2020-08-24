@@ -4,7 +4,7 @@
  Author:       Carlos Jovel
  Author URI:   http://example.com
  Template:     twentytwenty
- Version:      1.0.0
+ Version:      1.0.4
 */
 
 /*
@@ -22,12 +22,18 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Barlow Semi Condensed', sans-serif;
 }
 
+/*
+ * Primary text color
+ */
 body,
 .entry-title a,
 :root .has-primary-color {
   color: #0D4263;
 }
 
+/*
+ * Accent colors
+ */
 .color-accent,
 .color-accent-hover:hover,
 .color-accent-hover:focus,
@@ -38,8 +44,10 @@ a {
   color: #EA7317;
 }
 
-body:not(.overlay-header) .primary-menu > li > a,
-body:not(.overlay-header) .primary-menu > li > .icon,
+/*
+ * Links
+ */
+
 .modal-menu a,
 .footer-menu a,
 .footer-widgets a,
@@ -51,4 +59,175 @@ body:not(.overlay-header) .primary-menu > li > .icon,
 .header-footer-group .color-accent,
 .header-footer-group .color-accent-hover:hover {
   color: #5AB1BB;
+}
+
+/*
+ * MENU LINKS
+ */
+body:not(.overlay-header) .primary-menu > li > a,
+body:not(.overlay-header) .primary-menu > li > .icon {
+  color: #EA7317;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+body.home:not(.overlay-header) .primary-menu > li > a,
+body.home:not(.overlay-header) .primary-menu > li > .icon {
+  color: #fff;
+}
+
+/*
+ * HOME HEADER
+ */
+.home #site-header {
+  background: transparent;
+  position: absolute;
+  width: 100%;
+}
+
+.home .entry-header {
+  padding: 0;
+}
+
+/*
+ * HEADER
+ */
+#site-header {
+  background-color: rgba(0,0,0,.8);
+}
+
+#site-header .header-inner {
+  padding: 1rem 0;
+}
+
+/*
+ * MENU
+ */
+.primary-menu .menu-item {
+  border-radius: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.primary-menu .current-menu-item {
+  background: #EA7317;
+}
+
+body:not(.overlay-header) .primary-menu > li.current-menu-item > a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+/*
+ * FEATURED IMAGE ON HOME PAGE
+ */
+.home .featured-media {
+  height: 550px;
+  left: 0;
+  width: 100%;
+  max-width: 100%;
+  background-size: cover;
+  background-position: center 30%;
+}
+
+.home .featured-media::before {
+  background: none;
+  content: "Bringing Students Together";
+  display: block;
+  position: absolute;
+  bottom: initial;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: #fff;
+  z-index: 100;
+  font-size: 300%;
+  font-weight: bold;
+}
+
+.home .featured-media .featured-media-inner {
+  position: relative;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  background: rgba(0,0,0,.6);
+  max-width: 100%;
+}
+
+/*
+ * HOME CONTENT
+ */
+.home .post-inner {
+  padding: 0;
+}
+
+.home .intro-text {
+  padding: 10px;
+  text-align: center;
+  font-size: 32px;
+}
+
+@media screen and (min-width: 1000px) {
+  .home .intro-text {
+    padding: 40px;
+    text-align: center;
+    font-size: 40px;
+  }
+}
+
+/*
+ * FOOTER
+ */
+#site-footer,
+.to-the-top {
+  background: #5AB1BB;
+  color: #fff;
+}
+
+/*
+ * CONTENT
+ */
+ .entry-content {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+.entry-header .entry-title {
+  color: #0D4263;
+  text-align: left;
+}
+
+.entry-header .entry-title::after {
+  content: ".";
+  display: inline;
+  color: #EA7317;
+  font-size: inherit;
+}
+
+/*
+* FORM
+*/
+.contact-form label {
+  font-size: 28px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  min-height: 50px;
+  background: rgba(0,0,0,.1);
+}
+
+.contact-form input {
+  border-radius: 50px;
+}
+
+.contact-form #form-ffde6810.cwp-form form .cwp-submit button[type="submit"].cwp-submit-btn {
+  border-radius: 50px;
+  padding-left: 40px;
+  padding-right: 40px;
+  background: #ea7317 !important;
+  color: #fff !important;
 }
